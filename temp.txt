@@ -1,0 +1,17 @@
+DeviceTime = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+srcIP = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+dstIP = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+srcPort = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+dstPort = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+translatedPort = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+translatedIP = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end%
+Sender = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+Recipient = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+filename = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+threat = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+user = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+action = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+proto = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+category = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+application = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%
+url = %rawmsg:R,ERE,{{number}},BLANK:{{regex}}--end:json%

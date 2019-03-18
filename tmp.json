@@ -1,0 +1,38 @@
+// {
+//   "fieldItems": [
+//     { "id": "field_item_1", "name": "DeviceTime", "number": "0", "regex": "" },
+//     { "id": "field_item_2", "name": "proto", "regex": "", "number": "0" },
+//     { "id": "field_item_3", "name": "message", "regex": "", "number": "0" }
+//   ],
+//   "templateName": ""
+// }
+
+// {
+//   "fieldItems": [
+//     { "id": "field_item_1", "name": "Timestamp", "regex": "", "number": "0" },
+//     { "id": "field_item_2", "name": "Device IP", "regex": "", "number": "0" },
+//     {
+//       "id": "field_item_3",
+//       "name": "DeviceTime",
+//       "regex": "^.*date=([0-9]{4}-[0-9]{2}-[0-9]{2}) time=([0-9]{2}:[0-9]{2}:[0-9]{2}) .*$--end%T%rawmsg:R,ERE,2,BLANK:^.*date=([0-9]{4}-[0-9]{2}-[0-9]{2}) time=([0-9]{2}:[0-9]{2}:[0-9]{2}) .*$",
+//       "number": "1"
+//     },
+//     { "id": "field_item_4", "name": "severity", "regex": "", "number": "0" }
+//   ],
+//   "templateName": "TestTemplate"
+// }
+
+{
+  "fieldItems": [
+    { "id": 36, "name": "DeviceIP", "number": 0, "regex": "" },
+    { "id": 37, "name": "Severity", "number": 0, "regex": "" },
+    {
+      "id": 38,
+      "name": "DeviceTime",
+      "number": 1,
+      "regex": "^.*date=([0-9]{4}-[0-9]{2}-[0-9]{2}) time=([0-9]{2}:[0-9]{2}:[0-9]{2}) .*$--end%T%rawmsg:R,ERE,2,BLANK:^.*date=([0-9]{4}-[0-9]{2}-[0-9]{2}) time=([0-9]{2}:[0-9]{2}:[0-9]{2}) .*$"
+    },
+    { "id": 39, "name": "Timestamp", "number": 0, "regex": "" }
+  ],
+  "templateName": "TestTemplate"
+}
